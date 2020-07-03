@@ -495,7 +495,6 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
     display: block;
     padding: 0 28px;
     width: 170px;
-    height: 46px;
     font-size: 14px;
     font-weight: 800;
     line-height: 3.3em;
@@ -503,7 +502,6 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
     background: #928575;
     border-radius: 3px;
     text-transform: uppercase;
-    white-space: nowrap;
     box-sizing: border-box;
 }
 
@@ -1066,6 +1064,12 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
 
 .partners-img {
     display: block;
+    height: auto;
+}
+
+.partners-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
 
 .footer-page {
@@ -1503,10 +1507,10 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
 
     .menu-btn {
         position: absolute;
-        top: -40px;
+        top: -50px;
         right: 0;
         width: 25px;
-        height: 25px;
+        height: 20px;
         cursor: pointer;
         z-index: 2
     }
@@ -1520,16 +1524,17 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
         height: 2px;
         background: #fff;
         transition-duration: .25s;
+        top: 10px;
     }
     
     .menu-btn > span:before {
         content:'';
-        top: -8px;
+        top: -10px;
     }
     
     .menu-btn > span:after {
         content:'';
-        top: 8px;
+        top: 10px;
     }
 
     input[type="checkbox"]:checked ~ .main-nav-list {
@@ -1643,7 +1648,8 @@ input[type="search"]:focus ~ .header-search-form-label>.header-form-img {
     .carusel,
     .video,
     .adv,
-    .partners {
+    .partners,
+    .about-img {
         display: none;
     }
 
